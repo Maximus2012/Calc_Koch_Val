@@ -86,12 +86,20 @@ namespace WinFormsApp1
 
         private void multiply_Click(object sender, EventArgs e)
         {
-            
+            Operation.Text = "*";
+            first = double.Parse(text.Text);
+            text.Clear();
+            count = 3;
+            znak = true;
         }
 
         private void division_Click(object sender, EventArgs e)
         {
-            
+            Operation.Text = "/";
+            first = double.Parse(text.Text);
+            text.Clear();
+            count = 4;
+            znak = true;
         }
 
         private void pow_Click(object sender, EventArgs e)
@@ -105,7 +113,12 @@ namespace WinFormsApp1
 
         private void cos_Click(object sender, EventArgs e)
         {
-            
+            Operation.Text = "";
+            first = double.Parse(text.Text);
+            text.Clear();
+            Operation.Clear();
+            second = Math.Cos(first);
+            text.Text = second.ToString();
         }
 
         private void delete_Click(object sender, EventArgs e)
@@ -121,6 +134,10 @@ namespace WinFormsApp1
 
         }
 
+        private void text_TextChanged(object sender, EventArgs e)
+        {
+
+        }
 
         private void calculate()
         {
@@ -131,18 +148,26 @@ namespace WinFormsApp1
                     second = first + double.Parse(text.Text);
                     text.Text = second.ToString();
                     break;
-
                 case 2:
                     Operation.Clear();
                     second = first - double.Parse(text.Text);
                     text.Text = second.ToString();
                     break;
-
+                case 3:
+                    Operation.Clear();
+                    second = first * double.Parse(text.Text);
+                    text.Text = second.ToString();
+                    break;
+                case 4:
+                    Operation.Clear();
+                    second = first / double.Parse(text.Text);
+                    text.Text = second.ToString();
+                    break;
                 case 5:
                     Operation.Clear();
                     second = Math.Pow(first, double.Parse(text.Text));
                     text.Text = second.ToString();
-                    break;
+                    break;   
                 default:
                     break;
             }
