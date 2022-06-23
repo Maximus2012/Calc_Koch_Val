@@ -96,7 +96,11 @@ namespace WinFormsApp1
 
         private void pow_Click(object sender, EventArgs e)
         {
-            
+            Operation.Text = "^";
+            first = double.Parse(text.Text);
+            text.Clear();
+            count = 5;
+            znak = true;
         }
 
         private void cos_Click(object sender, EventArgs e)
@@ -134,6 +138,11 @@ namespace WinFormsApp1
                     text.Text = second.ToString();
                     break;
 
+                case 5:
+                    Operation.Clear();
+                    second = Math.Pow(first, double.Parse(text.Text));
+                    text.Text = second.ToString();
+                    break;
                 default:
                     break;
             }
