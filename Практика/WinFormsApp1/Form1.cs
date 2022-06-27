@@ -14,7 +14,7 @@ namespace WinFormsApp1
 
         private void number1_Click(object sender, EventArgs e)
         {
-            text.Text = text.Text + 1;
+            text.Text = text.Text + 1; 
         }
 
         private void number2_Click(object sender, EventArgs e)
@@ -119,6 +119,7 @@ namespace WinFormsApp1
             Operation.Clear();
             second = Math.Cos(first);
             text.Text = second.ToString();
+            
         }
 
         private void delete_Click(object sender, EventArgs e)
@@ -128,18 +129,6 @@ namespace WinFormsApp1
         }
 
         private void equal_Click(object sender, EventArgs e)
-        {
-            calculate();
-            
-
-        }
-
-        private void text_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void calculate()
         {
             switch (count)
             {
@@ -167,12 +156,63 @@ namespace WinFormsApp1
                     Operation.Clear();
                     second = Math.Pow(first, double.Parse(text.Text));
                     text.Text = second.ToString();
-                    break;   
+                    break;
                 default:
                     break;
             }
 
+
+        }
+
+        private void sin_Click(object sender, EventArgs e)
+        {
+            Operation.Text = "";
+            first = double.Parse(text.Text);
+            text.Clear();
+            Operation.Clear();
+            second = Math.Sin(first);
+            text.Text = second.ToString();
+        }
+
+        private void tg_Click(object sender, EventArgs e)
+        {
+            Operation.Text = "";
+            first = double.Parse(text.Text);
+            text.Clear();
+            Operation.Clear();
+            second = Math.Tan(first);
+            text.Text = second.ToString();
+        }
+
+        private void plusormin_Click(object sender, EventArgs e)
+        {
+            if (znak == true)
+            {
+                text.Text = "-" + text.Text;
+                znak = false;
+            }
+            else if (znak == false)
+            {
+                text.Text = text.Text.Replace("-", "");
+                znak = true;
+            }
+        }
+
+        private void erase_Click(object sender, EventArgs e)
+        {
+            int lenght = text.Text.Length - 1;
+            int i;
+            string textik = text.Text;
+            text.Clear();
+            for (i = 0; i < lenght; i++)
+            {
+                text.Text = text.Text + textik[i];
+            }
+        }
+
+       
+
         }
 
     }
-}
+

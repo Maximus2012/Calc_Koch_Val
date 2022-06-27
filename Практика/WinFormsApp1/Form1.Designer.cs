@@ -50,6 +50,10 @@
             this.number0 = new System.Windows.Forms.Button();
             this.nonint = new System.Windows.Forms.Button();
             this.equal = new System.Windows.Forms.Button();
+            this.erase = new System.Windows.Forms.Button();
+            this.sin = new System.Windows.Forms.Button();
+            this.tg = new System.Windows.Forms.Button();
+            this.plusormin = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -101,7 +105,7 @@
             this.delete.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.delete.Font = new System.Drawing.Font("Microsoft JhengHei", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.delete.ForeColor = System.Drawing.Color.White;
-            this.delete.Location = new System.Drawing.Point(24, 258);
+            this.delete.Location = new System.Drawing.Point(27, 373);
             this.delete.Name = "delete";
             this.delete.Size = new System.Drawing.Size(195, 83);
             this.delete.TabIndex = 1;
@@ -115,7 +119,7 @@
             this.cos.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.cos.Font = new System.Drawing.Font("Microsoft JhengHei", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.cos.ForeColor = System.Drawing.Color.White;
-            this.cos.Location = new System.Drawing.Point(264, 258);
+            this.cos.Location = new System.Drawing.Point(27, 256);
             this.cos.Name = "cos";
             this.cos.Size = new System.Drawing.Size(195, 83);
             this.cos.TabIndex = 2;
@@ -129,7 +133,7 @@
             this.pow.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.pow.Font = new System.Drawing.Font("Microsoft JhengHei", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.pow.ForeColor = System.Drawing.Color.White;
-            this.pow.Location = new System.Drawing.Point(506, 258);
+            this.pow.Location = new System.Drawing.Point(509, 373);
             this.pow.Name = "pow";
             this.pow.Size = new System.Drawing.Size(195, 83);
             this.pow.TabIndex = 3;
@@ -143,7 +147,7 @@
             this.division.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.division.Font = new System.Drawing.Font("Microsoft JhengHei", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.division.ForeColor = System.Drawing.Color.White;
-            this.division.Location = new System.Drawing.Point(753, 258);
+            this.division.Location = new System.Drawing.Point(756, 373);
             this.division.Name = "division";
             this.division.Size = new System.Drawing.Size(195, 83);
             this.division.TabIndex = 4;
@@ -157,7 +161,7 @@
             this.number7.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.number7.Font = new System.Drawing.Font("Microsoft JhengHei", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.number7.ForeColor = System.Drawing.Color.White;
-            this.number7.Location = new System.Drawing.Point(24, 374);
+            this.number7.Location = new System.Drawing.Point(27, 489);
             this.number7.Name = "number7";
             this.number7.Size = new System.Drawing.Size(195, 83);
             this.number7.TabIndex = 5;
@@ -171,7 +175,7 @@
             this.number8.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.number8.Font = new System.Drawing.Font("Microsoft JhengHei", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.number8.ForeColor = System.Drawing.Color.White;
-            this.number8.Location = new System.Drawing.Point(264, 374);
+            this.number8.Location = new System.Drawing.Point(267, 489);
             this.number8.Name = "number8";
             this.number8.Size = new System.Drawing.Size(195, 83);
             this.number8.TabIndex = 6;
@@ -185,7 +189,7 @@
             this.number9.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.number9.Font = new System.Drawing.Font("Microsoft JhengHei", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.number9.ForeColor = System.Drawing.Color.White;
-            this.number9.Location = new System.Drawing.Point(506, 374);
+            this.number9.Location = new System.Drawing.Point(509, 489);
             this.number9.Name = "number9";
             this.number9.Size = new System.Drawing.Size(195, 83);
             this.number9.TabIndex = 7;
@@ -199,7 +203,7 @@
             this.multiply.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.multiply.Font = new System.Drawing.Font("Microsoft JhengHei", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.multiply.ForeColor = System.Drawing.Color.White;
-            this.multiply.Location = new System.Drawing.Point(753, 374);
+            this.multiply.Location = new System.Drawing.Point(756, 489);
             this.multiply.Name = "multiply";
             this.multiply.Size = new System.Drawing.Size(195, 83);
             this.multiply.TabIndex = 8;
@@ -213,7 +217,7 @@
             this.number4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.number4.Font = new System.Drawing.Font("Microsoft JhengHei", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.number4.ForeColor = System.Drawing.Color.White;
-            this.number4.Location = new System.Drawing.Point(24, 492);
+            this.number4.Location = new System.Drawing.Point(27, 607);
             this.number4.Name = "number4";
             this.number4.Size = new System.Drawing.Size(195, 83);
             this.number4.TabIndex = 9;
@@ -227,7 +231,7 @@
             this.number5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.number5.Font = new System.Drawing.Font("Microsoft JhengHei", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.number5.ForeColor = System.Drawing.Color.White;
-            this.number5.Location = new System.Drawing.Point(264, 492);
+            this.number5.Location = new System.Drawing.Point(267, 607);
             this.number5.Name = "number5";
             this.number5.Size = new System.Drawing.Size(195, 83);
             this.number5.TabIndex = 10;
@@ -241,7 +245,7 @@
             this.number6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.number6.Font = new System.Drawing.Font("Microsoft JhengHei", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.number6.ForeColor = System.Drawing.Color.White;
-            this.number6.Location = new System.Drawing.Point(506, 492);
+            this.number6.Location = new System.Drawing.Point(509, 607);
             this.number6.Name = "number6";
             this.number6.Size = new System.Drawing.Size(195, 83);
             this.number6.TabIndex = 11;
@@ -255,7 +259,7 @@
             this.minus.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.minus.Font = new System.Drawing.Font("Microsoft JhengHei", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.minus.ForeColor = System.Drawing.Color.White;
-            this.minus.Location = new System.Drawing.Point(753, 492);
+            this.minus.Location = new System.Drawing.Point(756, 607);
             this.minus.Name = "minus";
             this.minus.Size = new System.Drawing.Size(195, 83);
             this.minus.TabIndex = 12;
@@ -269,7 +273,7 @@
             this.number1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.number1.Font = new System.Drawing.Font("Microsoft JhengHei", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.number1.ForeColor = System.Drawing.Color.White;
-            this.number1.Location = new System.Drawing.Point(24, 608);
+            this.number1.Location = new System.Drawing.Point(27, 723);
             this.number1.Name = "number1";
             this.number1.Size = new System.Drawing.Size(195, 83);
             this.number1.TabIndex = 13;
@@ -283,7 +287,7 @@
             this.number2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.number2.Font = new System.Drawing.Font("Microsoft JhengHei", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.number2.ForeColor = System.Drawing.Color.White;
-            this.number2.Location = new System.Drawing.Point(264, 608);
+            this.number2.Location = new System.Drawing.Point(267, 723);
             this.number2.Name = "number2";
             this.number2.Size = new System.Drawing.Size(195, 83);
             this.number2.TabIndex = 14;
@@ -297,7 +301,7 @@
             this.number3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.number3.Font = new System.Drawing.Font("Microsoft JhengHei", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.number3.ForeColor = System.Drawing.Color.White;
-            this.number3.Location = new System.Drawing.Point(506, 608);
+            this.number3.Location = new System.Drawing.Point(509, 723);
             this.number3.Name = "number3";
             this.number3.Size = new System.Drawing.Size(195, 83);
             this.number3.TabIndex = 15;
@@ -311,7 +315,7 @@
             this.plus.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.plus.Font = new System.Drawing.Font("Microsoft JhengHei", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.plus.ForeColor = System.Drawing.Color.White;
-            this.plus.Location = new System.Drawing.Point(753, 608);
+            this.plus.Location = new System.Drawing.Point(756, 723);
             this.plus.Name = "plus";
             this.plus.Size = new System.Drawing.Size(195, 83);
             this.plus.TabIndex = 16;
@@ -325,7 +329,7 @@
             this.number0.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.number0.Font = new System.Drawing.Font("Microsoft JhengHei", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.number0.ForeColor = System.Drawing.Color.White;
-            this.number0.Location = new System.Drawing.Point(24, 726);
+            this.number0.Location = new System.Drawing.Point(27, 841);
             this.number0.Name = "number0";
             this.number0.Size = new System.Drawing.Size(435, 83);
             this.number0.TabIndex = 17;
@@ -339,7 +343,7 @@
             this.nonint.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.nonint.Font = new System.Drawing.Font("Microsoft JhengHei", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.nonint.ForeColor = System.Drawing.Color.White;
-            this.nonint.Location = new System.Drawing.Point(506, 726);
+            this.nonint.Location = new System.Drawing.Point(509, 841);
             this.nonint.Name = "nonint";
             this.nonint.Size = new System.Drawing.Size(195, 83);
             this.nonint.TabIndex = 18;
@@ -353,7 +357,7 @@
             this.equal.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.equal.Font = new System.Drawing.Font("Microsoft JhengHei", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.equal.ForeColor = System.Drawing.Color.White;
-            this.equal.Location = new System.Drawing.Point(753, 726);
+            this.equal.Location = new System.Drawing.Point(756, 841);
             this.equal.Name = "equal";
             this.equal.Size = new System.Drawing.Size(195, 83);
             this.equal.TabIndex = 19;
@@ -361,12 +365,72 @@
             this.equal.UseVisualStyleBackColor = false;
             this.equal.Click += new System.EventHandler(this.equal_Click);
             // 
+            // erase
+            // 
+            this.erase.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(66)))), ((int)(((byte)(68)))));
+            this.erase.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.erase.Font = new System.Drawing.Font("Microsoft JhengHei", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.erase.ForeColor = System.Drawing.Color.White;
+            this.erase.Location = new System.Drawing.Point(267, 373);
+            this.erase.Name = "erase";
+            this.erase.Size = new System.Drawing.Size(195, 83);
+            this.erase.TabIndex = 20;
+            this.erase.Text = "<-";
+            this.erase.UseVisualStyleBackColor = false;
+            this.erase.Click += new System.EventHandler(this.erase_Click);
+            // 
+            // sin
+            // 
+            this.sin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(66)))), ((int)(((byte)(68)))));
+            this.sin.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.sin.Font = new System.Drawing.Font("Microsoft JhengHei", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.sin.ForeColor = System.Drawing.Color.White;
+            this.sin.Location = new System.Drawing.Point(267, 256);
+            this.sin.Name = "sin";
+            this.sin.Size = new System.Drawing.Size(195, 83);
+            this.sin.TabIndex = 21;
+            this.sin.Text = "sin";
+            this.sin.UseVisualStyleBackColor = false;
+            this.sin.Click += new System.EventHandler(this.sin_Click);
+            // 
+            // tg
+            // 
+            this.tg.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(66)))), ((int)(((byte)(68)))));
+            this.tg.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.tg.Font = new System.Drawing.Font("Microsoft JhengHei", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.tg.ForeColor = System.Drawing.Color.White;
+            this.tg.Location = new System.Drawing.Point(509, 256);
+            this.tg.Name = "tg";
+            this.tg.Size = new System.Drawing.Size(195, 83);
+            this.tg.TabIndex = 22;
+            this.tg.Text = "tg";
+            this.tg.UseVisualStyleBackColor = false;
+            this.tg.Click += new System.EventHandler(this.tg_Click);
+            // 
+            // plusormin
+            // 
+            this.plusormin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(66)))), ((int)(((byte)(68)))));
+            this.plusormin.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.plusormin.Font = new System.Drawing.Font("Microsoft JhengHei", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.plusormin.ForeColor = System.Drawing.Color.White;
+            this.plusormin.Location = new System.Drawing.Point(756, 256);
+            this.plusormin.Name = "plusormin";
+            this.plusormin.Size = new System.Drawing.Size(195, 83);
+            this.plusormin.TabIndex = 23;
+            this.plusormin.Text = "+/-";
+            this.plusormin.UseVisualStyleBackColor = false;
+            this.plusormin.Click += new System.EventHandler(this.plusormin_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(46)))));
-            this.ClientSize = new System.Drawing.Size(989, 853);
+            this.ClientSize = new System.Drawing.Size(989, 953);
+            this.Controls.Add(this.plusormin);
+            this.Controls.Add(this.tg);
+            this.Controls.Add(this.sin);
+            this.Controls.Add(this.erase);
             this.Controls.Add(this.equal);
             this.Controls.Add(this.nonint);
             this.Controls.Add(this.number0);
@@ -419,5 +483,9 @@
         private Button equal;
         private TextBox Operation;
         protected TextBox text;
+        private Button erase;
+        private Button sin;
+        private Button tg;
+        private Button plusormin;
     }
 }
